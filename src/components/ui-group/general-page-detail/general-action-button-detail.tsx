@@ -11,7 +11,6 @@ import { MinusCircledIcon, Pencil1Icon, PlusCircledIcon } from '@radix-ui/react-
 
 import { DefaultActionButtonDetailProps } from './general-page-detail.type';
 import { useAuthContext } from '@/lib/contexts/auth-context';
-import { UserGroupOutletDetail } from '@/features/setup-config/user-group-outlet/types/user-group-outlet.type';
 
 const DefaultActionButtons = (props: DefaultActionButtonDetailProps) => {
   const { currentUser } = useAuthContext();
@@ -50,21 +49,6 @@ const DefaultActionButtons = (props: DefaultActionButtonDetailProps) => {
     confirmation({
       type: dynamicAction.label.toLowerCase() as 'deactivate' | 'activate',
       onConfirm: () => {
-        if (title === 'Users Group Outlet Details') {
-          const data = queryClient.getQueryCache().find({ queryKey: [queryKeys, id] })?.state
-            .data as UserGroupOutletDetail;
-          const payloadData = {
-            id: `${id}/${ACTION.UPDATE}/`,
-            body: {
-              code: data?.code,
-              outlet: data?.outlets.map(el => el.id),
-              user_group: data?.id,
-              status: data?.status === STATUS.ACTIVE ? STATUS.INACTIVE : STATUS.ACTIVE
-            }
-          };
-          editData(payloadData);
-          return;
-        }
         const payloadData = {
           id: `${id}/${ACTION.UPDATE}/`,
           body: {
