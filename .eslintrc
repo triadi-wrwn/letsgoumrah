@@ -1,0 +1,58 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "eslint:recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier", "html"],
+  "rules": {
+    "arrow-body-style": "off",
+    "indent": [
+      "off",
+      1,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "react/function-component-definition": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-else-return": "error",
+    "no-nested-ternary": "error",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "react/prop-types": "off",
+    "comma-dangle": "off"
+  }
+}
