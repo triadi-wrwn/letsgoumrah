@@ -1,5 +1,4 @@
 import FormLogin from './components/form-login';
-import { Icons } from '@/lib/icons/icons';
 import bgUrl from '@/assets/bg-dot.svg';
 
 export default function Authentication() {
@@ -10,7 +9,8 @@ export default function Authentication() {
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
             <div className="flex flex-col space-y-2 text-center">
               <div className="relative z-20 flex items-center text-lg font-medium">
-                <Icons.HinoLogoFull className="w-3/4 mx-auto" />
+                {/* <Icons.HinoLogoFull className="w-3/4 mx-auto" /> */}
+                TMT
               </div>
             </div>
             <FormLogin />
