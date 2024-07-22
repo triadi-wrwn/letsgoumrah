@@ -6,7 +6,7 @@ import { tabTitleConverter } from '@/lib/utility';
 
 function App() {
   const location = useLocation();
-  let newTitle = tabTitleConverter('Base Project Kartala', location.pathname, 'CMS Application');
+  let newTitle = tabTitleConverter('Let`s Go Umrah', location.pathname, 'CMS Application');
   useDocumentTitle(newTitle);
 
   return <MainRoutes />;

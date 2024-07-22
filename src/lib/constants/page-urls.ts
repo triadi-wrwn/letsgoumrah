@@ -25,6 +25,7 @@ export const PAGE_URLS = {
     PRIVILEGE: 'privilege',
     MENUS: 'menus'
   },
+  ORGANIZATION_STRUCTURE: 'struktur-warrior',
   MASTER_DATA: {
     MASTER_DATA_INDEX: 'master-data',
     KPI_TYPES: 'kpi-type',

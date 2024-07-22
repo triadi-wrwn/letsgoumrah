@@ -10,12 +10,14 @@ import DetailUser from '@/features/setup-config/user-management/detail';
 import { PAGE_CHILD_URLS, PAGE_PARAMS, PAGE_URLS } from '@/lib/constants/page-urls';
 import { AuthProvider } from '@/lib/contexts/auth-context';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import OrganizationStructure from './features/organization-structure';
 
 const MainRoutes = () => {
   const {
     AUTH: { LOGIN },
     DASHBOARD,
-    SETUP_CONFIG: { SETUP_CONFIG_INDEX, USERS }
+    SETUP_CONFIG: { SETUP_CONFIG_INDEX, USERS },
+    ORGANIZATION_STRUCTURE
   } = PAGE_URLS;
 
   return (
@@ -23,6 +25,7 @@ const MainRoutes = () => {
       <Routes>
         <Route path="/" element={<Navigate to={LOGIN} replace />} />
         <Route path={LOGIN} element={<Authentication />} />
+        <Route path={ORGANIZATION_STRUCTURE} element={<OrganizationStructure />} />
         <Route path={DASHBOARD} element={<ProtectedRoute />}>
           <Route element={<MainLayout />}>
             <Route index element={<Dashboard />} />

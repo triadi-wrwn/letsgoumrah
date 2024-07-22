@@ -38,6 +38,7 @@
     "cmdk": "^0.2.0",
     "date-fns": "^3.3.1",
     "js-cookie": "^3.0.5",
+    "organization-chart-react": "^1.0.1",
     "react": "^18.2.0",
     "react-day-picker": "^8.10.0",
     "react-dom": "^18.2.0",
@@ -77,6 +78,7 @@
     "lint-staged": "^15.2.0",
     "postcss": "^8.4.33",
     "prettier": "^3.2.2",
+    "sass": "^1.77.8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "vite": "^5.0.8"

@@ -79,5 +79,6 @@ export const API_ENDPOINT = {
     GRADING_SCORE_BY_ID: (kpiNum: string, periodId: string) => `/grading-score/by-kpi-number/${kpiNum}/${periodId}`,
     GRADING_SCORE_EXPORT: (kpiNum: string, periodId: string) => `/grading-score/export-excel/${kpiNum}/${periodId}`,
     GRADING_SCORE_IMPORT: '/grading-score/import-excel/'
-  }
+  },
+  ORG_STRUCTURE: '/warrior/struktur/1'
 } as const;

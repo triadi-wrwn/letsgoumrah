@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.backend-title {
+  background-color: #66abd3;
+  color: #fff;
+}
+.backend-content {
+  text-align: center;
+}
+.frontend-title {
+  background-color: #333;
+  color: #fff;
+}
+.frontend-content {
+  text-align: center;
+}
